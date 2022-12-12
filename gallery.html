@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery - Brand Salon</title>
+    <link href="css/brand.css" rel="stylesheet">
+    <link href="icon-scissors-32.gif" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header role="banner">
+      <div id="branding-wrapper">
+        <h1>Gallery</h1>
+        <a href="#main-content" id="skip-link">Skip to main content</a>
+        <img src="images/logo.gif" alt="Brand Salon logo." width="330" height="97">
+      </div>
+      <nav role="navigation">
+        <label for="nav-box" id="nav-trigger">Menu</label>
+        <input id="nav-box" type="checkbox">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" id="current-page">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div id="wrapper">
+      <main id="main-content" tabindex="-1" role="main">
+        
+        <section>
+          <h2>Styling</h2>
+          <p>At Brand Salon, we can style your hair in ways you never thought were possible!</p>
+          <div>
+            <img src="images/color.jpg" width="350" height="234" alt="A stylist coloring a customers hair.">
+            <p>Our trained professionals can color your hair in over 4000 different hues!</p>
+          </div>
+          <div>
+            <img src="images/shampoo.jpg" width="350" height="233" alt="A stylist shampooing a customers hair.">
+            <p>We source the materials for our shampoos from all over the world!</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <address>
+            <ul>
+              <li>Phone: 500.400.1111</li>
+              <li>Email: <a href="#">brandsalon@example.com</a></li>
+              <li>Address: 1111 Citiroad <abbr title="Street">St</abbr>, Someville, <abbr title="California">CA</abbr></li>
+            </ul>
+          </address>
+        </section>
+      </main>
+
+      <aside role="complementary">
+        <section>
+          <h2>New Logo Color Palette Contest!</h2>
+          <p>We recently held a contest to recolor our new chosen logo, the three top choices are below. Vote for your top pick, voting closes December 20th, 2022. The winner will be announced on December 29th, 2022, after new years, random entries will be selected to receive a gift card!</p>
+          <img src="images/head-3.png" width="234" height="143" alt="A stylist coloring a customers hair.">
+          <img src="images/head-2.png" width="234" height="143" alt="A stylist coloring a customers hair.">
+          <img src="images/head-1.png" width="234" height="143" alt="A stylist coloring a customers hair.">
+        
+          <form action="unit-3-form-handler.html" method="get" role="form" id="voting-form">
+            <fieldset>
+              <legend>Fields marked with an asterisk (*) are required</legend>
+              <fieldset>
+                <legend>Select One (1)</legend>
+                <input type="radio" name="vote" id="black-vote" value="black-vote" required>
+                <label for="black-vote">*Black head</label><br>
+
+                <input type="radio" name="vote" id="blue-vote" value="blue-vote" required>
+                <label for="blue-vote">*Blue head</label><br>
+
+                <input type="radio" name="vote" id="pink-vote" value="pink-vote" required>
+                <label for="pink-vote">*Pink head</label>
+              </fieldset>
+
+              <label for="vote-email">*Email</label>
+              <input type="email" id="vote-email" name="vote-email" required><br>
+
+              <input type="submit" value="Vote!">
+            </fieldset>
+          </form>
+        </section>
+      </aside>
+     
+      <footer role="contentinfo">
+        <p><small><i>All material &copy; Brand Salon</i></small></p>
+      </footer>
+    </div>
+  </body>
+
+</html>

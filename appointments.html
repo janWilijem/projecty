@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Appointments - Brand Salon</title>
+    <link href="css/brand.css" rel="stylesheet">
+    <link href="icon-scissors-32.gif" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header role="banner">
+      <div id="branding-wrapper">
+        <h1>Appointments</h1>
+        <a href="#main-content" id="skip-link">Skip to main content</a>
+        <img src="images/logo.gif" alt="Brand salon logo." width="330" height="97">
+      </div>
+      <nav role="navigation">
+        <label for="nav-box" id="nav-trigger">Menu</label>
+        <input id="nav-box" type="checkbox">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="appointments.html" id="current-page">Appointments</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="wrapper">
+      <main id="main-content" tabindex="-1" role="main">
+
+        <div>
+          <p>Use the form below to request an appointment. Fields with an asterisk (*) are required.</p>
+          <form action="unit-3-form-handler.html" method="get" role="form">
+            <fieldset>
+              <legend>Contact Info</legend>
+              <label for="fname">*First Name:</label>
+              <input type="text" id="fname" name="First Name" required><br>
+
+              <label for="lname">*Last Name:</label>
+              <input type="text" id="lname" name="Last Name" required><br>
+
+              <label for="email">*Email:</label>
+              <input type="email" id="email" name="Email" required><br>
+
+              <label for="phone">*Phone:</label>
+              <input type="tel" id="phone" name="Phone" required>
+            </fieldset>
+
+            <fieldset>
+              <legend>Appointment Details</legend>
+              <label for="type">*What type of service do you need?<br>
+                (If "Other", specify in comment box)</label><br>
+              <input type="text" id="type" name="Event Type" list="events" required><br>
+              <datalist id="events">
+                <option>Other</option>
+                <option>Beard Trim</option>
+                <option>Permanent</option>
+                <option>Coloring</option>
+                <option>Highlights</option>
+                <option>Shampooing</option>
+                <option>Trim</option>
+              </datalist>
+
+              <label for="number">*Number of person(s) scheduling </label><br>
+              <input type="number" id="number" name="Number of People" min="1" required><br>
+
+              <label for="date">*Preferred Date:</label><br>
+              <input type="date" id="date" name="Event Date" required><br>
+
+              <label for="comments">Other details, requests, or comments?</label><br>
+              <textarea cols="50" rows="6" id="comments" name="Comments"></textarea>
+            </fieldset>
+            <input type="submit" value="Request Appointment" id="submit-button">
+          </form>
+        </div>
+
+        <section>
+          <h2>Contact</h2>
+          <address>
+            <ul>
+              <li>Phone: 500.400.1111</li>
+              <li>Email: <a href="#">brandsalon@example.com</a></li>
+              <li>Address: 1111 Citiroad <abbr title="Street">St</abbr>, Someville, <abbr title="California">CA</abbr></li>
+            </ul>
+          </address>
+        </section>
+      </main>
+
+      <aside role="complementary">
+        <div>
+
+          <section>
+            <h2>Walk-Ins</h2>
+            <p>Walk-ins are available to anyone on Mondays, Tuesdays, and Thursdays, from <time datetime="08:00">8:00</time> <abbr title="Ante Meridiem">AM</abbr> to <time datetime="12:00">12:00</time> <abbr title="Post Meridiem">PM.</abbr></p>
+          </section>
+
+          <section>
+            <h2>Online Appointment Requests</h2>
+            <p>Appointments that are requested online will be confirmed or denied through email within <time datetime="P1D">24 hours</time> of the form being complete.</p>
+          </section>
+
+          <section>
+            <h2>In-person Appointment Scheduling</h2>
+            <p>Appointments can be made by visiting us on location. We will help select a date that is both open and convenient for both parties.</p>
+          </section>
+        </div>
+      </aside>
+
+      <footer role="contentinfo">
+        <p><small><i>All material &copy; Brand Salon</i></small></p>
+      </footer>
+    </div>
+  </body>
+
+</html>

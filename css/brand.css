@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 16px/1.5 Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/******** Header and Nav *******/
+
+header {
+  background-color: #231f20;
+  box-shadow: 0 0 10px #000;
+  color: #fff;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 650px;
+  padding: 2rem;
+  padding-right: 0;
+  position: relative;
+  width: 80%;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto Slab', Times, serif;
+}
+
+header img {
+  margin: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+header h1 {
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+nav {
+  background-color: #231f20;
+  border: #333 solid 1px;
+  bottom: 0;
+  box-shadow: 0 0 10px #000;
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 1200px;
+  min-width: 320px;
+  order: -2;
+  padding: 0.2rem;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+nav li {
+  display: inline;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+nav a {
+  border-right: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  padding-right: 0.5rem;
+  text-decoration: none;
+}
+
+nav li:last-child a {
+  border-right: none;
+}
+
+#nav-trigger,
+#nav-box {
+  display: none;
+}
+
+#current-page {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px #4890f4, 1px -1px 3px #4890f4, -1px 1px 3px #4890f4, -1px -1px 3px #4890f4;
+}
+
+/******** Skip Link *******/
+
+#skip-link {
+  background-color: #000;
+  border: #fff double 6px;
+  color: #fff;
+  padding: 0.5rem;
+  position: relative;
+  right: 8rem;
+  text-align: center;
+  text-decoration: none;
+  top: -9999px;
+  width: 25%;
+  z-index: 100;
+}
+
+#skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/******** Page Wrapper *******/
+
+#wrapper {
+  background-color: #231f20;
+  box-shadow: 0 0 10px #000;
+  color: #fff;
+  display: flex;
+  margin: 0 auto 2rem;
+  max-width: 1200px;
+  min-width: 320px;
+  padding: 2rem;
+  padding-right: 0;
+  position: relative;
+  width: 80%;
+}
+
+/******** Main Page Content *******/
+
+main {
+  flex: 4 1 0;
+}
+
+main img {
+  margin: 1rem;
+}
+
+main section:last-of-type {
+  padding-bottom: 2rem;
+}
+
+main p {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+
+main a {
+  color: #76adf9;
+}
+
+/******** Aside *******/
+
+aside {
+  background-color: #333;
+  border: #333 1px solid;
+  flex: 1 1 0;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  order: -1;
+  padding: 1rem;
+  padding-bottom: 1rem;
+}
+
+#farmers-market img {
+  background-color: #ddd;
+  border-radius: 5px;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+/******** Table *******/
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 95%;
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+th,
+td {
+  border: #333 solid 1px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+th {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/******** Form *******/
+
+form {
+  border: #7d8b8d solid 1px;
+  margin-bottom: 4rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+}
+
+input {
+  margin-bottom: 0.5rem;
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset {
+  border: none;
+}
+
+#voting-form {
+  padding-top: 1rem;
+}
+
+#voting-form legend {
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+#submit-button {
+  margin-left: 1rem;
+}
+
+/******** Footer *******/
+
+footer {
+  background-color: #6b797b;
+  bottom: 0;
+  display: flex;
+  height: auto;
+  justify-content: right;
+  padding-right: 1rem;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+/************ Fluid text ************/
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: calc(16px + (28 - 16) * (100vw - 320px) / (1200 - 320));
+  }
+}
+
+/******** 1175px ***********/
+
+@media screen and (max-width: 1175px) {
+  #wrapper {
+    width: 90%;
+  }
+  header {
+    width: 90%;
+  }
+}
+
+/********* 935px **********/
+
+@media screen and (max-width: 935px) {
+  #wrapper,
+  table,
+  header {
+    width: 100%;
+  }
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/****** 800px ***********/
+
+@media screen and (max-width: 800px) {
+  #branding-wrapper img {
+    position: absolute;
+    right: 25%;
+    top: 0;
+  }
+  caption {
+    display: block;
+    padding-top: 3rem;
+    text-align: left;
+  }
+
+  #branding-wrapper h1 {
+    border-bottom: 1px #333 solid;
+    font-size: 1.75rem;
+    font-weight: bold;
+    left: 0;
+    margin-top: 1rem;
+    padding-bottom: 0;
+    position: relative;
+    top: 9rem;
+    z-index: 111;
+  }
+  h2 {
+    margin-top: 2.5rem;
+  }
+  #wrapper {
+    display: block;
+    margin-bottom: 0;
+  }
+  aside {
+    display: block;
+  }
+  nav {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin-left: 0;
+    margin-top: 6rem;
+    position: absolute;
+    text-align: center;
+    top: 2rem;
+    width: 100%;
+    z-index: 112;
+  }
+  nav ul {
+    display: none;
+    padding: 0;
+  }
+  nav li {
+    background-color: #333;
+    display: block;
+  }
+  nav a {
+    border-bottom: 1px solid #fff;
+    border-right: none;
+    color: #ddd;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  nav a:hover {
+    text-decoration: none;
+  }
+  #current-page {
+    background-color: #444;
+    color: #fff;
+    text-shadow: none;
+  }
+  #nav-trigger {
+    background-color: #333;
+    border-bottom: #000 solid 2px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+  }
+  #nav-box:checked + ul {
+    display: block;
+  }
+  footer {
+    margin: 0;
+    padding-right: 2rem;
+  }
+}
+
+/****** 660px ***********/
+
+@media screen and (max-width: 660px) {
+  body,
+  html,
+  #wrapper {
+    overflow-x: hidden;
+  }
+}
+
+/****** 550px ***********/
+
+@media screen and (max-width: 550px) {
+  #branding-wrapper img {
+    display: none;
+  }
+  img {
+    width: 80%;
+  }
+
+  #farmers-market img {
+    display: none;
+  }
+
+  nav {
+    margin: 0;
+  }
+  nav li {
+    text-align: left;
+  }
+  #nav-trigger {
+    font-size: 60px;
+    padding: 2rem;
+    text-align: left;
+  }
+}
